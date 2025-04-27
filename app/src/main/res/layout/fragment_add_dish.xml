@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/input_dish"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Dish Name" />
+
+    <Button
+        android:id="@+id/btn_add_dish"
+        android:text="Add Dish"
+        android:background="#AA00FF00"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

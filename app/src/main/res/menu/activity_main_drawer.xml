@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_view_dishes"
+        android:title="View Dishes"
+        android:icon="@drawable/ic_menu_gallery"/>
+    <item
+        android:id="@+id/nav_add_dish"
+        android:title="Add Dish"
+        android:icon="@drawable/ic_menu_gallery"/>
+    <item
+        android:id="@+id/nav_recycler_view"
+        android:title="Recycler View"
+        android:icon="@drawable/ic_menu_slideshow" />
+</menu>
