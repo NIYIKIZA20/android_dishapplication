@@ -18,8 +18,12 @@ public class ListViewActivity extends AppCompatActivity {
     ListView dishListView;
     Button returnBtn;
     Button openDishBtn;
+    Button btnGoRecycler;
     String[] dishes = {
-            "Spaghetti", "Sushi", "Pizza", "Matoke", "Salad", "Steak", "Curry", "Soup", "Donards", "Capati"
+            "Pizza", "Burger", "Soup", "Salad", "Pasta", "Sushi", "Steak",
+            "Tacos", "Sandwich", "Curry","Capati","imyumbati","idegede",
+            "Noodles", "Fried Rice", "Dumplings", "Lasagna", "Biryani",
+            "Chow Mein", "Hotdog", "Wrap", "Grilled Cheese", "Quiche",
     };
 
     @Override
@@ -34,6 +38,7 @@ public class ListViewActivity extends AppCompatActivity {
             dishListView = findViewById(R.id.dishListView);
             returnBtn = findViewById(R.id.button);
             openDishBtn = findViewById(R.id.openDishBtn);
+            btnGoRecycler= findViewById(R.id.button_recycler);
 
             ArrayAdapter<String> adapter = new ArrayAdapter<>(
                     this, android.R.layout.simple_list_item_1, dishes
@@ -41,10 +46,10 @@ public class ListViewActivity extends AppCompatActivity {
 
             dishListView.setAdapter(adapter);
 
-            returnBtn.setOnClickListener(new View.OnClickListener() {
+            btnGoRecycler.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(ListViewActivity.this, MainActivity.class);
+                    Intent intent = new Intent(ListViewActivity.this, RecyclerViewActivity.class);
                     startActivity(intent);
                 }
             });
@@ -55,6 +60,7 @@ public class ListViewActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
 
             return insets;
         });

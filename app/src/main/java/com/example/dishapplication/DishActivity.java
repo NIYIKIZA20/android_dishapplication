@@ -67,7 +67,7 @@ public class DishActivity extends AppCompatActivity {
             } else if (id == R.id.nav_view_dishes) {
                 getSupportFragmentManager().popBackStack();
                 reloadList();
-            } else if (id == R.id.nav_recycler_view) {
+            } else if (id == R.id.nav_recycler) {
                 //  Open RecyclerViewActivity
                 Intent intent = new Intent(DishActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);

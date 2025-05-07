@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnViewDishes;
+    public Button btnGoRecycler;
 
 
     @Override
@@ -26,12 +27,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 
             btnViewDishes = findViewById(R.id.button);
-
-
             btnViewDishes.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    startActivity(intent);
+                }
+            });
+            btnGoRecycler = findViewById(R.id.button_recycler);
+            btnGoRecycler.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     startActivity(intent);
                 }
             });

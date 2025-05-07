@@ -19,7 +19,6 @@ public class AddDishFragment extends Fragment {
 
     EditText inputDish;
     Button btnAddDish;
-
     public AddDishFragment() {}
 
     @Nullable

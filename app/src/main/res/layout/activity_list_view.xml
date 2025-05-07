@@ -10,38 +10,39 @@
 
     <ListView
         android:id="@+id/dishListView"
-        android:layout_width="351dp"
-        android:layout_height="544dp"
+        android:layout_width="372dp"
+        android:layout_height="583dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.108" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="163dp"
-        android:layout_height="53dp"
-        android:text="Return Back"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_recycler"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:text="Recycler view"
+        app:backgroundTint="@color/button_background_color"
+        app:cornerRadius="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dishListView"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.857" />
 
     <Button
         android:id="@+id/openDishBtn"
-        android:layout_width="163dp"
-        android:layout_height="53dp"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
         android:text="Go to Dish Page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/dishListView"
-        app:layout_constraintVertical_bias="0.279" />
+        app:layout_constraintVertical_bias="0.857" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

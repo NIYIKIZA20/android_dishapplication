@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="4dp">
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,23 +20,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dish Name"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121" />
 
         <TextView
             android:id="@+id/textViewDishType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dish Type"
+            android:text="Type: Starter"
             android:textSize="16sp"
-            android:layout_marginTop="4dp" />
+            android:textColor="#555555"
+            android:layout_marginTop="6dp" />
 
         <TextView
             android:id="@+id/textViewIsVegetarian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vegetarian: true"
+            android:text="Vegetarian"
             android:textSize="14sp"
-            android:layout_marginTop="2dp" />
+            android:textStyle="italic"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/vegetarian_background"
+            android:padding="4dp"
+            android:layout_marginEnd="12dp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

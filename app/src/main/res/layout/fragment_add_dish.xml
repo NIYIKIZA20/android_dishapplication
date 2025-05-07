@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <!-- Stylish Input Field -->
     <EditText
         android:id="@+id/input_dish"
-        android:layout_width="376dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Dish Name" />
+        android:hint="Enter Dish Name"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#888888"
+        android:textColor="#000000" />
 
-    <Button
+    <!-- Rounded Green Button -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_add_dish"
-        android:text="Add Dish"
-        android:background="#AA00FF00"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Add Dish"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="16dp"
+        app:backgroundTint="@color/button_background"
+        android:textColor="@android:color/white" />
 </LinearLayout>
+

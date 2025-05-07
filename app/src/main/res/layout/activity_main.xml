@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="352dp"
-        android:layout_height="247dp"
+        android:layout_width="358dp"
+        android:layout_height="241dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.457"
@@ -34,16 +34,29 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="350dp"
-        android:layout_height="57dp"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
         android:text="View Dishes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.073" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_recycler"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:text="Recycler view"
+        app:backgroundTint="@color/button_background_color"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.953" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
